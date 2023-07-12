@@ -19,3 +19,19 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class !com.fsa.mylibrary.core.hidden.** { *; }
+
+-keep class com.fsa.mylibrary.core.ApiKt { *; }
+
+-keepclassmembers class * {
+    *** Companion;
+}
+
+-keepclassmembers class androidx.compose.** {
+    <init>(...);
+}
+
+-keepclassmembers class androidx.compose.** {
+    *;
+}
