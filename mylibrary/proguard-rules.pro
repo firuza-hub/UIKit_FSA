@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class !com.fsa.mylibrary.composables.hidden.** { *; }
+-keep class !com.fsa.mylibrary.core.hidden.** { *; }

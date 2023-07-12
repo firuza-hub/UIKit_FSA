@@ -1,4 +1,4 @@
-package com.fsa.mylibrary.composables.hidden
+package com.fsa.mylibrary.core.hidden
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

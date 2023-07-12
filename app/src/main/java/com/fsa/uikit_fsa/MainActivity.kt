@@ -10,7 +10,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import com.fsa.mylibrary.composables.Kit_Button
+import androidx.compose.ui.platform.LocalContext
+import com.fsa.mylibrary.composables.Kit_Button_Functional
 import com.fsa.uikit_fsa.ui.theme.UIKit_FSATheme
 
 
@@ -23,9 +24,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+
+                    val context = LocalContext.current
+
                     Box(Modifier.fillMaxSize()) {
 
-                        Kit_Button(
+                        Kit_Button_Functional(
+                            context,
                             modifier = Modifier.align(Alignment.Center),
                             "Meow",
                             backgroundColor = Color.Red.copy(0.5f)
