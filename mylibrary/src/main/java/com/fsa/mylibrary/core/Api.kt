@@ -19,7 +19,23 @@ fun Kit_Button_Functional(
     Kit_Button(modifier, btnText, backgroundColor, onClick = {
         Toast.makeText(
             ctx,
-            "MEOW!",
+            btnText,
+            Toast.LENGTH_SHORT
+        ).show()
+    })
+}
+
+@Composable
+fun Kit_Button_Functional2(
+    ctx: Context,
+    modifier: Modifier = Modifier,
+    btnText: String = "",
+    backgroundColor: Color = Color.White
+) {
+    Kit_Button(modifier, "Print a message", backgroundColor, onClick = {
+        Toast.makeText(
+            ctx,
+            btnText,
             Toast.LENGTH_SHORT
         ).show()
     })
