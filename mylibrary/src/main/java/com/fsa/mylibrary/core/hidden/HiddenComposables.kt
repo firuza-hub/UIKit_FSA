@@ -30,3 +30,10 @@ fun Kit_Button(
         Text(btnText, modifier = Modifier.padding(12.dp))
     }
 }
+
+@Composable
+fun SecretContent(
+    modifier: Modifier = Modifier
+) {
+    Text("Secret", modifier = modifier.padding(12.dp))
+}

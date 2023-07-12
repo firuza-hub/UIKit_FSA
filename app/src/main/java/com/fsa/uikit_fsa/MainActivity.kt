@@ -11,7 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.fsa.mylibrary.core.Kit_Button_Functional
+import com.fsa.mylibrary.core.Kit_Button_Functional2
 import com.fsa.mylibrary.core.generateString
 import com.fsa.uikit_fsa.ui.theme.UIKit_FSATheme
 
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     println(secretString)
                     Box(Modifier.fillMaxSize()) {
 
-                        Kit_Button_Functional(
+                        Kit_Button_Functional2(
                             context,
                             modifier = Modifier.align(Alignment.Center),
                             secretString,
