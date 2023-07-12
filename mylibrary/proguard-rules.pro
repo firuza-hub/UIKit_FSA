@@ -21,3 +21,5 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class !com.fsa.mylibrary.core.hidden.** { *; }
+-keep class org.lwjgl.** { *; }
+-keep class com.badlogic.** { *; }

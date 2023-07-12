@@ -13,17 +13,24 @@ import com.fsa.mylibrary.core.hidden.SecretContent
 
 
 @Composable
-fun SecretRedBox(){
-    Box(modifier = Modifier.background(Color.Red)
-        .width(100.dp)
-        .height(50.dp)){
+fun SecretRedBox() {
+    Box(
+        modifier = Modifier
+            .background(Color.Red)
+            .width(100.dp)
+            .height(50.dp)
+    ) {
         SecretContent(modifier = Modifier.align(Alignment.Center))
     }
 }
+
 @Composable
-fun RedBox(){
-    Box(modifier = Modifier.background(Color.Red)
-        .width(100.dp)
-        .height(50.dp)){
+fun RedBox() {
+    Box(
+        modifier = Modifier
+            .background(Color.Red)
+            .width(100.dp)
+            .height(50.dp)
+    ) {
     }
 }
